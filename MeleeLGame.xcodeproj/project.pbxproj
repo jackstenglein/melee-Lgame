@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C90110682140046B00A032A2 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90110672140046B00A032A2 /* StartViewController.m */; };
+		C901106B21400EC000A032A2 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901106A21400EC000A032A2 /* ReportViewController.m */; };
 		C994B055213F3F7C00065F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B054213F3F7C00065F46 /* AppDelegate.m */; };
 		C994B05B213F3F7C00065F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C994B059213F3F7C00065F46 /* Main.storyboard */; };
 		C994B05D213F3F7D00065F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994B05C213F3F7D00065F46 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		C90110662140046B00A032A2 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		C90110672140046B00A032A2 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		C901106921400EC000A032A2 /* ReportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		C901106A21400EC000A032A2 /* ReportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		C994B050213F3F7C00065F46 /* MeleeLGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeleeLGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C994B053213F3F7C00065F46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C994B054213F3F7C00065F46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 			children = (
 				C994B053213F3F7C00065F46 /* AppDelegate.h */,
 				C994B054213F3F7C00065F46 /* AppDelegate.m */,
+				C901106921400EC000A032A2 /* ReportViewController.h */,
+				C901106A21400EC000A032A2 /* ReportViewController.m */,
 				C90110662140046B00A032A2 /* StartViewController.h */,
 				C90110672140046B00A032A2 /* StartViewController.m */,
 				C9ECC0D8213F642500538CBD /* HomeViewController.h */,
@@ -278,6 +283,7 @@
 			files = (
 				C994B089213F46BD00065F46 /* CharacterSquareView.m in Sources */,
 				C994B063213F3F7D00065F46 /* main.m in Sources */,
+				C901106B21400EC000A032A2 /* ReportViewController.m in Sources */,
 				C90110682140046B00A032A2 /* StartViewController.m in Sources */,
 				C994B055213F3F7C00065F46 /* AppDelegate.m in Sources */,
 				C9ECC0DA213F642500538CBD /* HomeViewController.m in Sources */,
