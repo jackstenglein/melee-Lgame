@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90110682140046B00A032A2 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90110672140046B00A032A2 /* StartViewController.m */; };
 		C994B055213F3F7C00065F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B054213F3F7C00065F46 /* AppDelegate.m */; };
-		C994B058213F3F7C00065F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B057213F3F7C00065F46 /* ViewController.m */; };
 		C994B05B213F3F7C00065F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C994B059213F3F7C00065F46 /* Main.storyboard */; };
 		C994B05D213F3F7D00065F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994B05C213F3F7D00065F46 /* Assets.xcassets */; };
 		C994B060213F3F7D00065F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C994B05E213F3F7D00065F46 /* LaunchScreen.storyboard */; };
 		C994B063213F3F7D00065F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B062213F3F7D00065F46 /* main.m */; };
 		C994B06D213F3F7D00065F46 /* MeleeLGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B06C213F3F7D00065F46 /* MeleeLGameTests.m */; };
 		C994B078213F3F7D00065F46 /* MeleeLGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B077213F3F7D00065F46 /* MeleeLGameUITests.m */; };
+		C994B086213F452500065F46 /* CharacterSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = C994B085213F452500065F46 /* CharacterSquare.xib */; };
+		C994B089213F46BD00065F46 /* CharacterSquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B088213F46BD00065F46 /* CharacterSquareView.m */; };
+		C9ECC0DA213F642500538CBD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECC0D9213F642500538CBD /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C90110662140046B00A032A2 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		C90110672140046B00A032A2 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C994B050213F3F7C00065F46 /* MeleeLGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeleeLGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C994B053213F3F7C00065F46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C994B054213F3F7C00065F46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C994B056213F3F7C00065F46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C994B057213F3F7C00065F46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C994B05A213F3F7C00065F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C994B05C213F3F7D00065F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C994B05F213F3F7D00065F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		C994B073213F3F7D00065F46 /* MeleeLGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeleeLGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C994B077213F3F7D00065F46 /* MeleeLGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeleeLGameUITests.m; sourceTree = "<group>"; };
 		C994B079213F3F7D00065F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C994B085213F452500065F46 /* CharacterSquare.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSquare.xib; sourceTree = "<group>"; };
+		C994B087213F46BD00065F46 /* CharacterSquareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterSquareView.h; sourceTree = "<group>"; };
+		C994B088213F46BD00065F46 /* CharacterSquareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterSquareView.m; sourceTree = "<group>"; };
+		C9ECC0D8213F642500538CBD /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C9ECC0D9213F642500538CBD /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +111,14 @@
 			children = (
 				C994B053213F3F7C00065F46 /* AppDelegate.h */,
 				C994B054213F3F7C00065F46 /* AppDelegate.m */,
-				C994B056213F3F7C00065F46 /* ViewController.h */,
-				C994B057213F3F7C00065F46 /* ViewController.m */,
+				C90110662140046B00A032A2 /* StartViewController.h */,
+				C90110672140046B00A032A2 /* StartViewController.m */,
+				C9ECC0D8213F642500538CBD /* HomeViewController.h */,
+				C9ECC0D9213F642500538CBD /* HomeViewController.m */,
+				C994B087213F46BD00065F46 /* CharacterSquareView.h */,
+				C994B088213F46BD00065F46 /* CharacterSquareView.m */,
 				C994B059213F3F7C00065F46 /* Main.storyboard */,
+				C994B085213F452500065F46 /* CharacterSquare.xib */,
 				C994B05C213F3F7D00065F46 /* Assets.xcassets */,
 				C994B05E213F3F7D00065F46 /* LaunchScreen.storyboard */,
 				C994B061213F3F7D00065F46 /* Info.plist */,
@@ -237,6 +250,7 @@
 			files = (
 				C994B060213F3F7D00065F46 /* LaunchScreen.storyboard in Resources */,
 				C994B05D213F3F7D00065F46 /* Assets.xcassets in Resources */,
+				C994B086213F452500065F46 /* CharacterSquare.xib in Resources */,
 				C994B05B213F3F7C00065F46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C994B058213F3F7C00065F46 /* ViewController.m in Sources */,
+				C994B089213F46BD00065F46 /* CharacterSquareView.m in Sources */,
 				C994B063213F3F7D00065F46 /* main.m in Sources */,
+				C90110682140046B00A032A2 /* StartViewController.m in Sources */,
 				C994B055213F3F7C00065F46 /* AppDelegate.m in Sources */,
+				C9ECC0DA213F642500538CBD /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JackStenglein.MeleeLGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,7 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JackStenglein.MeleeLGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

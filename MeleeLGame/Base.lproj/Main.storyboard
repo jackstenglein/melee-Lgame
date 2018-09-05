@@ -1,24 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="K8B-gL-YHc">
+            <objects>
+                <viewController id="rrN-NU-aQr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Bg-q2-Lsf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player's Names to Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-EA-KKk">
+                                <rect key="frame" x="218" y="20" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h8L-EA-KKk" firstAttribute="top" secondItem="D4X-wW-Gsh" secondAttribute="top" constant="20" id="uBm-R3-rj0"/>
+                            <constraint firstItem="h8L-EA-KKk" firstAttribute="centerX" secondItem="9Bg-q2-Lsf" secondAttribute="centerX" id="vcy-bZ-Fr9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D4X-wW-Gsh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQT-ia-3bH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="17"/>
+        </scene>
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqD-Kx-W6o" customClass="CharacterSquareView">
+                                <rect key="frame" x="10" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Zl5-tM-ZxK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Dr. Mario"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaj-O8-bN9" customClass="CharacterSquareView">
+                                <rect key="frame" x="82.5" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Mario"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jg6-SN-R0J" customClass="CharacterSquareView">
+                                <rect key="frame" x="155" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Luigi"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpr-Xi-Ub8" customClass="CharacterSquareView">
+                                <rect key="frame" x="227.5" y="115" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Bowser"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foC-i3-ikv" customClass="CharacterSquareView">
+                                <rect key="frame" x="299.5" y="115" width="68" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Peach"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOC-UJ-3at" customClass="CharacterSquareView">
+                                <rect key="frame" x="372.5" y="115" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Yoshi"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-IA-fFo" customClass="CharacterSquareView">
+                                <rect key="frame" x="444.5" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="DK"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-jn-cxz" customClass="CharacterSquareView">
+                                <rect key="frame" x="517" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Falcon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-sX-73T" customClass="CharacterSquareView">
+                                <rect key="frame" x="589.5" y="115" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Ganon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-jg-R10" customClass="CharacterSquareView">
+                                <rect key="frame" x="10" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Falco"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-dD-9eq" customClass="CharacterSquareView">
+                                <rect key="frame" x="82.5" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Fox"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRZ-Gh-8Ea" customClass="CharacterSquareView">
+                                <rect key="frame" x="155" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Ness"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Op-M4-FSc" customClass="CharacterSquareView">
+                                <rect key="frame" x="227.5" y="200" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="ICs"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elv-41-6l7" customClass="CharacterSquareView">
+                                <rect key="frame" x="299.5" y="200" width="68" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Kirby"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dp-en-uv3" customClass="CharacterSquareView">
+                                <rect key="frame" x="372.5" y="200" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Samus"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDM-Sf-MMT" customClass="CharacterSquareView">
+                                <rect key="frame" x="444.5" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Zelda"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7l2-2q-cY6" customClass="CharacterSquareView">
+                                <rect key="frame" x="517" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Link"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQB-5R-1Ad" customClass="CharacterSquareView">
+                                <rect key="frame" x="589.5" y="200" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="YL"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4L-RH-fPr" customClass="CharacterSquareView">
+                                <rect key="frame" x="82.5" y="285" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Pichu"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28P-hB-bhK" customClass="CharacterSquareView">
+                                <rect key="frame" x="155" y="285" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Pikachu"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-Mm-rTa" customClass="CharacterSquareView">
+                                <rect key="frame" x="227.5" y="285" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Puff"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-2I-69j" customClass="CharacterSquareView">
+                                <rect key="frame" x="299.5" y="285" width="68" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Mewtwo"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBq-tc-XOU" customClass="CharacterSquareView">
+                                <rect key="frame" x="372.5" y="285" width="67" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="G&amp;W"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gy-lv-vSH" customClass="CharacterSquareView">
+                                <rect key="frame" x="444.5" y="285" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Marth"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBZ-OD-RGE" customClass="CharacterSquareView">
+                                <rect key="frame" x="517" y="285" width="67.5" height="80"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.2901960784" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="characterName" value="Roy"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Un0-FK-mZu">
+                                <rect key="frame" x="10" y="0.0" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Team 1"/>
+                                    <segment title="Team 2"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleTeamDisplay:" destination="BYZ-38-t0r" eventType="valueChanged" id="zhm-7u-K78"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHq-ts-1Dv">
+                                <rect key="frame" x="10" y="36" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-xy-3lv">
+                                <rect key="frame" x="10" y="65" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcv-cp-tKC">
+                                <rect key="frame" x="310" y="11" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reportGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLT-1w-uZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FQB-5R-1Ad" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="0Ne-8w-AUT"/>
+                            <constraint firstItem="Jg6-SN-R0J" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="0ZC-5h-b8a"/>
+                            <constraint firstItem="WDM-Sf-MMT" firstAttribute="leading" secondItem="2Dp-en-uv3" secondAttribute="trailing" constant="5" id="0ZJ-L3-nYV"/>
+                            <constraint firstItem="elv-41-6l7" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="1WK-ml-zzW"/>
+                            <constraint firstItem="5Op-M4-FSc" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="1Xu-Jh-meD"/>
+                            <constraint firstItem="LLY-jn-cxz" firstAttribute="leading" secondItem="EVI-IA-fFo" secondAttribute="trailing" constant="5" id="20V-ga-FG6"/>
+                            <constraint firstItem="2Dp-en-uv3" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="24C-VH-yvj"/>
+                            <constraint firstItem="2Dp-en-uv3" firstAttribute="leading" secondItem="elv-41-6l7" secondAttribute="trailing" constant="5" id="3Yv-f2-qo2"/>
+                            <constraint firstItem="3gy-lv-vSH" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="4bS-O8-RS4"/>
+                            <constraint firstItem="HBq-tc-XOU" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="5Pc-d7-iMD"/>
+                            <constraint firstItem="jBZ-OD-RGE" firstAttribute="trailing" secondItem="7l2-2q-cY6" secondAttribute="trailing" id="5Z5-eT-66Z"/>
+                            <constraint firstItem="Jg6-SN-R0J" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="5zc-3y-Lqu"/>
+                            <constraint firstItem="5Op-M4-FSc" firstAttribute="leading" secondItem="kRZ-Gh-8Ea" secondAttribute="trailing" constant="5" id="6EF-cu-bGW"/>
+                            <constraint firstItem="7l2-2q-cY6" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="6pv-Of-6hH"/>
+                            <constraint firstItem="Cpr-Xi-Ub8" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="7sY-ZF-8WC"/>
+                            <constraint firstItem="Jg6-SN-R0J" firstAttribute="leading" secondItem="kaj-O8-bN9" secondAttribute="trailing" constant="5" id="80D-wx-Nlb"/>
+                            <constraint firstItem="hoM-2I-69j" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="8Id-5e-gGw"/>
+                            <constraint firstItem="d5a-sX-73T" firstAttribute="leading" secondItem="LLY-jn-cxz" secondAttribute="trailing" constant="5" id="8eE-2B-SLW"/>
+                            <constraint firstItem="3gy-lv-vSH" firstAttribute="leading" secondItem="HBq-tc-XOU" secondAttribute="trailing" constant="5" id="90p-8J-GNn"/>
+                            <constraint firstItem="kRZ-Gh-8Ea" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="9xk-2G-np6"/>
+                            <constraint firstItem="WDM-Sf-MMT" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="A9C-tA-526"/>
+                            <constraint firstItem="5Js-dD-9eq" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="BRI-DC-Oa3"/>
+                            <constraint firstItem="28P-hB-bhK" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="BTM-En-dZ4"/>
+                            <constraint firstItem="dNe-Mm-rTa" firstAttribute="leading" secondItem="28P-hB-bhK" secondAttribute="trailing" constant="5" id="BrQ-4u-s8R"/>
+                            <constraint firstItem="Cpr-Xi-Ub8" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="Fsx-uh-WGa"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="Hng-3a-0Gp"/>
+                            <constraint firstItem="kaj-O8-bN9" firstAttribute="leading" secondItem="BqD-Kx-W6o" secondAttribute="trailing" constant="5" id="IW8-Z3-IpD"/>
+                            <constraint firstItem="I4L-RH-fPr" firstAttribute="leading" secondItem="5Js-dD-9eq" secondAttribute="leading" id="JvE-89-ztE"/>
+                            <constraint firstItem="I4L-RH-fPr" firstAttribute="height" secondItem="BqD-Kx-W6o" secondAttribute="height" id="K1L-o6-6tG"/>
+                            <constraint firstItem="HBq-tc-XOU" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="M5A-hs-ZTn"/>
+                            <constraint firstItem="elv-41-6l7" firstAttribute="leading" secondItem="5Op-M4-FSc" secondAttribute="trailing" constant="5" id="MeW-bJ-s3D"/>
+                            <constraint firstItem="EVI-IA-fFo" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="Mez-Sg-82G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FQB-5R-1Ad" secondAttribute="trailing" constant="10" id="NHo-aA-r0V"/>
+                            <constraint firstItem="7l2-2q-cY6" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="OkK-Ix-Zs1"/>
+                            <constraint firstItem="FQB-5R-1Ad" firstAttribute="leading" secondItem="7l2-2q-cY6" secondAttribute="trailing" constant="5" id="Rj4-gp-lxI"/>
+                            <constraint firstItem="dNe-Mm-rTa" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="RtH-4p-o1T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5a-sX-73T" secondAttribute="trailing" constant="10" id="Rww-iE-Ndu"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="height" secondItem="BqD-Kx-W6o" secondAttribute="height" id="S14-kS-oex"/>
+                            <constraint firstItem="28P-hB-bhK" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="T3g-uc-JXv"/>
+                            <constraint firstItem="LLY-jn-cxz" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="T5A-jb-GZ1"/>
+                            <constraint firstItem="28P-hB-bhK" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="T7T-4E-6aC"/>
+                            <constraint firstItem="hoM-2I-69j" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="Tdu-kO-EWW"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="bottom" constant="5" id="Toi-nM-Q7g"/>
+                            <constraint firstItem="2Dp-en-uv3" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="Vr2-WE-RhC"/>
+                            <constraint firstItem="LLY-jn-cxz" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="W6f-jR-cO2"/>
+                            <constraint firstItem="EVI-IA-fFo" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="WFr-lN-xmJ"/>
+                            <constraint firstItem="LLY-jn-cxz" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="X1J-ue-Qg5"/>
+                            <constraint firstItem="d5a-sX-73T" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="XXO-b7-p6x"/>
+                            <constraint firstItem="jBZ-OD-RGE" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="YeW-Bj-7hI"/>
+                            <constraint firstItem="d5a-sX-73T" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="Yka-wy-HFK"/>
+                            <constraint firstItem="HBq-tc-XOU" firstAttribute="leading" secondItem="hoM-2I-69j" secondAttribute="trailing" constant="5" id="Z2U-qo-Uq2"/>
+                            <constraint firstItem="elv-41-6l7" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="ZYN-lf-NKf"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="am8-R9-a2c"/>
+                            <constraint firstItem="jBZ-OD-RGE" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="bMa-2k-fG1"/>
+                            <constraint firstItem="WDM-Sf-MMT" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="bZf-6J-xr0"/>
+                            <constraint firstItem="foC-i3-ikv" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="bcw-jq-c6q"/>
+                            <constraint firstItem="foC-i3-ikv" firstAttribute="leading" secondItem="Cpr-Xi-Ub8" secondAttribute="trailing" constant="5" id="bfF-6A-yHg"/>
+                            <constraint firstItem="hoM-2I-69j" firstAttribute="leading" secondItem="dNe-Mm-rTa" secondAttribute="trailing" constant="5" id="bxu-Wp-qWc"/>
+                            <constraint firstItem="jBZ-OD-RGE" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="cth-oZ-rdd"/>
+                            <constraint firstItem="I4L-RH-fPr" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="bottom" constant="5" id="cuI-Dp-OeD"/>
+                            <constraint firstItem="5Op-M4-FSc" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="eO6-yP-Pnh"/>
+                            <constraint firstItem="EVI-IA-fFo" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="eU3-YE-sMo"/>
+                            <constraint firstItem="7l2-2q-cY6" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="eYb-nh-djf"/>
+                            <constraint firstItem="hoM-2I-69j" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="ea0-vh-L5U"/>
+                            <constraint firstItem="kaj-O8-bN9" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="fNd-3R-C8x"/>
+                            <constraint firstItem="nOC-UJ-3at" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="gfF-Vx-km7"/>
+                            <constraint firstItem="elv-41-6l7" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="guB-LX-3e4"/>
+                            <constraint firstItem="jBZ-OD-RGE" firstAttribute="leading" secondItem="3gy-lv-vSH" secondAttribute="trailing" constant="5" id="ieb-Oy-aXg"/>
+                            <constraint firstItem="Cpr-Xi-Ub8" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="inJ-Qh-zCi"/>
+                            <constraint firstItem="I4L-RH-fPr" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="jUU-MP-reC"/>
+                            <constraint firstItem="nOC-UJ-3at" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="jo8-ps-a2e"/>
+                            <constraint firstItem="EVI-IA-fFo" firstAttribute="leading" secondItem="nOC-UJ-3at" secondAttribute="trailing" constant="5" id="kLg-dL-GQ0"/>
+                            <constraint firstItem="FQB-5R-1Ad" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="lFE-eu-lJh"/>
+                            <constraint firstItem="5Js-dD-9eq" firstAttribute="leading" secondItem="YYg-jg-R10" secondAttribute="trailing" constant="5" id="lty-Vw-JaO"/>
+                            <constraint firstItem="d5a-sX-73T" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="mAR-4G-OXP"/>
+                            <constraint firstItem="Jg6-SN-R0J" firstAttribute="bottom" secondItem="BqD-Kx-W6o" secondAttribute="bottom" id="mdG-yl-shk"/>
+                            <constraint firstItem="nOC-UJ-3at" firstAttribute="leading" secondItem="foC-i3-ikv" secondAttribute="trailing" constant="5" id="ms7-KA-TLe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" constant="10" id="njH-tT-TCe"/>
+                            <constraint firstItem="nOC-UJ-3at" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="oOx-dk-9Mj"/>
+                            <constraint firstItem="kRZ-Gh-8Ea" firstAttribute="leading" secondItem="5Js-dD-9eq" secondAttribute="trailing" constant="5" id="oft-RS-Vnd"/>
+                            <constraint firstItem="HBq-tc-XOU" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="ol1-Cy-SaL"/>
+                            <constraint firstItem="dNe-Mm-rTa" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="pew-UL-LND"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="pwP-Wf-KgB"/>
+                            <constraint firstItem="foC-i3-ikv" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="qsn-Xm-Vrq"/>
+                            <constraint firstItem="3gy-lv-vSH" firstAttribute="bottom" secondItem="I4L-RH-fPr" secondAttribute="bottom" id="qwz-5E-duI"/>
+                            <constraint firstItem="kaj-O8-bN9" firstAttribute="top" secondItem="BqD-Kx-W6o" secondAttribute="top" id="rEV-dq-am5"/>
+                            <constraint firstItem="2Dp-en-uv3" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="rvS-6R-kRr"/>
+                            <constraint firstItem="WDM-Sf-MMT" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="uer-e2-nIj"/>
+                            <constraint firstItem="3gy-lv-vSH" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="ulm-b8-huL"/>
+                            <constraint firstItem="kRZ-Gh-8Ea" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="uoP-5T-AVM"/>
+                            <constraint firstItem="kaj-O8-bN9" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="vGA-9N-myX"/>
+                            <constraint firstItem="FQB-5R-1Ad" firstAttribute="top" secondItem="5Js-dD-9eq" secondAttribute="top" id="vVr-Tu-OA5"/>
+                            <constraint firstItem="BqD-Kx-W6o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="va9-GB-oQY"/>
+                            <constraint firstItem="7l2-2q-cY6" firstAttribute="leading" secondItem="WDM-Sf-MMT" secondAttribute="trailing" constant="5" id="wSJ-hE-lXJ"/>
+                            <constraint firstItem="foC-i3-ikv" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="wmB-AB-5g6"/>
+                            <constraint firstItem="dNe-Mm-rTa" firstAttribute="top" secondItem="I4L-RH-fPr" secondAttribute="top" id="yX2-7n-xeP"/>
+                            <constraint firstItem="YYg-jg-R10" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="yfL-9o-Qhq"/>
+                            <constraint firstItem="Cpr-Xi-Ub8" firstAttribute="leading" secondItem="Jg6-SN-R0J" secondAttribute="trailing" constant="5" id="z0J-e0-87u"/>
+                            <constraint firstItem="28P-hB-bhK" firstAttribute="leading" secondItem="I4L-RH-fPr" secondAttribute="trailing" constant="5" id="zOq-ny-T5p"/>
+                            <constraint firstItem="5Op-M4-FSc" firstAttribute="bottom" secondItem="5Js-dD-9eq" secondAttribute="bottom" id="zXE-HP-LU0"/>
+                            <constraint firstItem="kRZ-Gh-8Ea" firstAttribute="width" secondItem="BqD-Kx-W6o" secondAttribute="width" id="zdO-5Y-7vO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playersLabel" destination="KHq-ts-1Dv" id="Fou-lY-0Y1"/>
+                        <outlet property="recordLabel" destination="eRS-xy-3lv" id="lg3-dl-iwg"/>
+                        <outletCollection property="characterSquareViews" destination="BqD-Kx-W6o" id="T2D-Uz-g2x"/>
+                        <outletCollection property="characterSquareViews" destination="kaj-O8-bN9" id="zgc-y4-xx5"/>
+                        <outletCollection property="characterSquareViews" destination="Jg6-SN-R0J" id="UzC-5i-tsG"/>
+                        <outletCollection property="characterSquareViews" destination="Cpr-Xi-Ub8" id="cNz-kr-gM4"/>
+                        <outletCollection property="characterSquareViews" destination="foC-i3-ikv" id="fXQ-yg-tNT"/>
+                        <outletCollection property="characterSquareViews" destination="nOC-UJ-3at" id="Vd4-sw-PJw"/>
+                        <outletCollection property="characterSquareViews" destination="EVI-IA-fFo" id="th3-JE-OHw"/>
+                        <outletCollection property="characterSquareViews" destination="LLY-jn-cxz" id="CP4-XU-mHQ"/>
+                        <outletCollection property="characterSquareViews" destination="d5a-sX-73T" id="h3A-Wa-YKL"/>
+                        <outletCollection property="characterSquareViews" destination="YYg-jg-R10" id="tcu-da-McT"/>
+                        <outletCollection property="characterSquareViews" destination="5Js-dD-9eq" id="zHU-3W-20a"/>
+                        <outletCollection property="characterSquareViews" destination="kRZ-Gh-8Ea" id="9Iz-lW-0zA"/>
+                        <outletCollection property="characterSquareViews" destination="5Op-M4-FSc" id="VrU-eR-KfH"/>
+                        <outletCollection property="characterSquareViews" destination="elv-41-6l7" id="Tdc-FB-ssF"/>
+                        <outletCollection property="characterSquareViews" destination="2Dp-en-uv3" id="6tW-Uh-mog"/>
+                        <outletCollection property="characterSquareViews" destination="WDM-Sf-MMT" id="JFd-Fw-LQI"/>
+                        <outletCollection property="characterSquareViews" destination="7l2-2q-cY6" id="9cw-i7-Lsj"/>
+                        <outletCollection property="characterSquareViews" destination="FQB-5R-1Ad" id="fUf-Sc-suw"/>
+                        <outletCollection property="characterSquareViews" destination="I4L-RH-fPr" id="pST-Dm-CS6"/>
+                        <outletCollection property="characterSquareViews" destination="28P-hB-bhK" id="jPg-tT-1PW"/>
+                        <outletCollection property="characterSquareViews" destination="dNe-Mm-rTa" id="wwD-97-3zF"/>
+                        <outletCollection property="characterSquareViews" destination="hoM-2I-69j" id="5Gh-aL-c8H"/>
+                        <outletCollection property="characterSquareViews" destination="HBq-tc-XOU" id="6E1-cX-hyb"/>
+                        <outletCollection property="characterSquareViews" destination="3gy-lv-vSH" id="lhv-Wc-EWA"/>
+                        <outletCollection property="characterSquareViews" destination="jBZ-OD-RGE" id="C4o-QC-b7J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.19940029985008" y="16.800000000000001"/>
         </scene>
     </scenes>
 </document>
