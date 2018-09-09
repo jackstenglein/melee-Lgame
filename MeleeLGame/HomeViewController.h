@@ -19,5 +19,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *recordLabel;
 @property (strong, nonatomic) NSDictionary* gameReport;
 - (IBAction)toggleTeamDisplay:(UISegmentedControl*)sender;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *teamDisplayControl;
 
 @end

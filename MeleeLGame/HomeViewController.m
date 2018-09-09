@@ -24,8 +24,7 @@
     // Do any additional setup after loading the view.
     team1Wins = 0;
     team2Wins = 0;
-    [self.playersLabel setText: [NSString stringWithFormat:@"%@, %@", self.player1Name, self.player2Name]];
-    [self.recordLabel setText: [NSString stringWithFormat:@"%d-%d", team1Wins, team2Wins]];
+    [self updateLabels];
     stageNames = [NSArray arrayWithObjects:@"Yoshi's Story",@"Pokemon Stadium",@"Battlefield",@"Final Destination",@"Dreamland", nil];
 }
 
@@ -53,12 +52,15 @@
 
 - (IBAction)toggleTeamDisplay:(UISegmentedControl*)sender {
     BOOL displayTeam1 = (sender.selectedSegmentIndex == 0);
+    [self updateLabels];
     for (CharacterSquareView* characterSquareView in self.characterSquareViews) {
         [characterSquareView setDisplayTeam1:displayTeam1];
         [characterSquareView setNeedsDisplay];
     }
-    
-    if (displayTeam1) {
+}
+
+-(void)updateLabels {
+    if (self.teamDisplayControl.selectedSegmentIndex == 0) {
         [self.playersLabel setText: [NSString stringWithFormat:@"%@, %@", self.player1Name, self.player2Name]];
         [self.recordLabel setText: [NSString stringWithFormat:@"%d-%d", team1Wins, team2Wins]];
     } else {
@@ -68,17 +70,27 @@
 }
 
 -(IBAction)unwindFromReportVC:(UIStoryboardSegue*)segue {
-    NSLog(@"Report Dictionary: %@", self.gameReport);
     if (self.gameReport != nil) {
         BOOL team1Won = [self.gameReport[@"winner"] boolValue];
-        GameResultType team1Result = team1Won ? GameWon : GameLost;
-        GameResultType team2Result = team1Won ? GameLost : GameWon;
+        GameResultType team1Result;
+        GameResultType team2Result;
+        if (team1Won) {
+            team1Wins++;
+            team1Result = GameWon;
+            team2Result = GameLost;
+        } else {
+            team2Wins++;
+            team1Result = GameLost;
+            team2Result = GameWon;
+        }
+        
         NSString* stage = stageNames[[self.gameReport[@"stage"] intValue]];
         [self.characterSquareViews[[self.gameReport[self.player1Name] intValue]] setTeam1Result:team1Result player:self.player1Name stage:stage];
         [self.characterSquareViews[[self.gameReport[self.player2Name] intValue]] setTeam1Result:team1Result player:self.player2Name stage:stage];
         [self.characterSquareViews[[self.gameReport[self.player3Name] intValue]] setTeam2Result:team2Result player:self.player3Name stage:stage];
         [self.characterSquareViews[[self.gameReport[self.player4Name] intValue]] setTeam2Result:team2Result player:self.player4Name stage:stage];
+        [self updateLabels];
     }
-    
 }
+
 @end

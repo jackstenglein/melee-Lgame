@@ -461,6 +461,7 @@
                     <connections>
                         <outlet property="playersLabel" destination="KHq-ts-1Dv" id="Fou-lY-0Y1"/>
                         <outlet property="recordLabel" destination="eRS-xy-3lv" id="lg3-dl-iwg"/>
+                        <outlet property="teamDisplayControl" destination="Un0-FK-mZu" id="OxE-Io-G1O"/>
                         <outletCollection property="characterSquareViews" destination="BqD-Kx-W6o" id="T2D-Uz-g2x"/>
                         <outletCollection property="characterSquareViews" destination="kaj-O8-bN9" id="zgc-y4-xx5"/>
                         <outletCollection property="characterSquareViews" destination="Jg6-SN-R0J" id="UzC-5i-tsG"/>
