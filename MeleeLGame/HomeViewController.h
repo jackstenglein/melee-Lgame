@@ -17,8 +17,7 @@
 @property (strong, nonatomic) IBOutletCollection(CharacterSquareView) NSArray *characterSquareViews;
 @property (strong, nonatomic) IBOutlet UILabel *playersLabel;
 @property (strong, nonatomic) IBOutlet UILabel *recordLabel;
-
-- (IBAction)reportGame:(id)sender;
+@property (strong, nonatomic) NSDictionary* gameReport;
 - (IBAction)toggleTeamDisplay:(UISegmentedControl*)sender;
 
 @end

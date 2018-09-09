@@ -72,7 +72,6 @@
     UIColor* borderColor = [UIColor blackColor];
     
     if (self.displayTeam1) {
-        NSLog(@"Display team 1");
         playerName = team1Player;
         stageName = team1Stage;
         switch (team1Result) {

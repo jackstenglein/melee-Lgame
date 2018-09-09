@@ -25,5 +25,17 @@
 @property (strong, nonatomic) IBOutlet UILabel *team1Label;
 @property (strong, nonatomic) IBOutlet UILabel *team2Label;
 @property (strong, nonatomic) IBOutlet UISwitch *winnerSwitch;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *characterSelectTop;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *characterSelectBottom;
+@property (strong, nonatomic) IBOutlet UILabel *characterSelectLabel;
+- (IBAction)cancelCharacterSelect:(id)sender;
+- (IBAction)chooseCharacter:(UIButton*)sender;
+- (IBAction)openCharacterSelect:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *stageSelectTop;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *stageSelectBottom;
+- (IBAction)cancelStageSelect:(id)sender;
+- (IBAction)chooseStage:(UIButton *)sender;
+- (IBAction)openStageSelect:(UIButton *)sender;
+- (IBAction)save:(id)sender;
 
 @end
