@@ -141,9 +141,9 @@
 }
 
 - (IBAction)save:(id)sender {
-    if (player1Character < 0 || player2Character < 0 || player3Character < 0 || stage < 0) {
+    if (player1Character.intValue < 0 || player2Character.intValue < 0 || player3Character.intValue < 0 || player4Character.intValue < 0 || stage.intValue < 0) {
         [self showErrorAlert:@"Please choose all four characters and a stage."];
-    } else if (player1Character == player2Character || player3Character == player4Character) {
+    } else if (player1Character.intValue == player2Character.intValue || player3Character.intValue == player4Character.intValue) {
         [self showErrorAlert:@"Teammates cannot play the same character. Please choose valid characters."];
     } else {
         saved = YES;

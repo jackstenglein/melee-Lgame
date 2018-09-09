@@ -25,7 +25,7 @@
     team1Wins = 0;
     team2Wins = 0;
     [self updateLabels];
-    stageNames = [NSArray arrayWithObjects:@"Yoshi's Story",@"Pokemon Stadium",@"Battlefield",@"Final Destination",@"Dreamland", nil];
+    stageNames = [NSArray arrayWithObjects:@"Yoshi's",@"Pokemon",@"Battlefield",@"FD",@"Dreamland", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,12 +83,13 @@
             team1Result = GameLost;
             team2Result = GameWon;
         }
+        int game = team1Wins + team2Wins;
         
         NSString* stage = stageNames[[self.gameReport[@"stage"] intValue]];
-        [self.characterSquareViews[[self.gameReport[self.player1Name] intValue]] setTeam1Result:team1Result player:self.player1Name stage:stage];
-        [self.characterSquareViews[[self.gameReport[self.player2Name] intValue]] setTeam1Result:team1Result player:self.player2Name stage:stage];
-        [self.characterSquareViews[[self.gameReport[self.player3Name] intValue]] setTeam2Result:team2Result player:self.player3Name stage:stage];
-        [self.characterSquareViews[[self.gameReport[self.player4Name] intValue]] setTeam2Result:team2Result player:self.player4Name stage:stage];
+        [self.characterSquareViews[[self.gameReport[self.player1Name] intValue]] setTeam1Result:team1Result player:self.player1Name stage:stage gameNumber:game];
+        [self.characterSquareViews[[self.gameReport[self.player2Name] intValue]] setTeam1Result:team1Result player:self.player2Name stage:stage gameNumber:game];
+        [self.characterSquareViews[[self.gameReport[self.player3Name] intValue]] setTeam2Result:team2Result player:self.player3Name stage:stage gameNumber:game];
+        [self.characterSquareViews[[self.gameReport[self.player4Name] intValue]] setTeam2Result:team2Result player:self.player4Name stage:stage gameNumber:game];
         [self updateLabels];
     }
 }

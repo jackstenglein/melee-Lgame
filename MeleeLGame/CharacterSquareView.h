@@ -23,7 +23,8 @@ typedef enum : NSUInteger {
 
 @property (strong, nonatomic) IBInspectable NSString* characterName;
 @property (strong, nonatomic) IBOutlet UILabel *characterLabel;
+@property (strong, nonatomic) IBOutlet UILabel *gameNumberLabel;
 
--(void)setTeam1Result:(GameResultType)result player:(NSString*)player stage:(NSString *)stage;
--(void)setTeam2Result:(GameResultType)result player:(NSString*)player stage:(NSString *)stage;
+-(void)setTeam1Result:(GameResultType)result player:(NSString*)player stage:(NSString *)stage gameNumber:(int)game;
+-(void)setTeam2Result:(GameResultType)result player:(NSString*)player stage:(NSString *)stage gameNumber:(int)game;
 @end

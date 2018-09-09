@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="characterLabel" destination="uNb-6e-kpV" id="Mk8-xA-dqd"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="5WC-Jb-AJp"/>
+                <outlet property="gameNumberLabel" destination="sMD-kK-FAX" id="DMr-eb-PUe"/>
                 <outlet property="playerLabel" destination="Aqv-e3-jTh" id="VcD-BA-GRM"/>
                 <outlet property="stageLabel" destination="njZ-e7-hwh" id="XrY-AV-SOf"/>
             </connections>
@@ -27,22 +28,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Mr. Game &amp; Watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-6e-kpV">
-                    <rect key="frame" x="0.0" y="86" width="140" height="24"/>
+                    <rect key="frame" x="0.0" y="89.5" width="140" height="20.5"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-e3-jTh">
-                    <rect key="frame" x="49" y="36" width="41" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-e3-jTh">
+                    <rect key="frame" x="50" y="52" width="40.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-e7-hwh">
-                    <rect key="frame" x="52" y="62" width="36" height="16"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-e7-hwh">
+                    <rect key="frame" x="55" y="73" width="30.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMD-kK-FAX">
+                    <rect key="frame" x="4" y="2" width="13" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -51,9 +58,15 @@
                 <constraint firstItem="uNb-6e-kpV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0tF-xQ-eqp"/>
                 <constraint firstItem="uNb-6e-kpV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5op-QB-55K"/>
                 <constraint firstItem="njZ-e7-hwh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IJa-cB-zB4"/>
-                <constraint firstItem="njZ-e7-hwh" firstAttribute="top" secondItem="Aqv-e3-jTh" secondAttribute="bottom" constant="8" id="M8r-nv-WqF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="njZ-e7-hwh" secondAttribute="trailing" constant="2" id="JE3-ZB-jye"/>
+                <constraint firstItem="njZ-e7-hwh" firstAttribute="top" secondItem="Aqv-e3-jTh" secondAttribute="bottom" constant="3" id="M8r-nv-WqF"/>
+                <constraint firstItem="Aqv-e3-jTh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="PcJ-6c-sJb"/>
                 <constraint firstItem="Aqv-e3-jTh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WgH-MT-GgX"/>
-                <constraint firstItem="uNb-6e-kpV" firstAttribute="top" secondItem="njZ-e7-hwh" secondAttribute="bottom" constant="8" id="vh8-aF-JKN"/>
+                <constraint firstItem="sMD-kK-FAX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="iPM-JV-x9t"/>
+                <constraint firstItem="sMD-kK-FAX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="iXf-bP-NBC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aqv-e3-jTh" secondAttribute="trailing" constant="2" id="rIF-Tg-ilI"/>
+                <constraint firstItem="uNb-6e-kpV" firstAttribute="top" secondItem="njZ-e7-hwh" secondAttribute="bottom" constant="3" id="vh8-aF-JKN"/>
+                <constraint firstItem="njZ-e7-hwh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="vjY-TA-rhM"/>
                 <constraint firstItem="uNb-6e-kpV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wIl-WO-aLq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
